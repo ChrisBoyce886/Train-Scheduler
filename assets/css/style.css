@@ -1,0 +1,39 @@
+body {
+    background-image: url(../images/background1.jpg);
+    background-size: cover;
+    background-position-x: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat; 
+    background-color: grey;
+}
+
+.jumbotron {
+    margin-right: -5%;
+    margin-left: -5%;
+    padding-bottom: 25%;
+    background-image: url("../images/subway.jpg"); 
+    background-size: cover;
+    border: 3px solid  white;
+}
+
+#header {
+    color: white;
+    font-family: 'Monoton', cursive;
+    margin-top: -5%;             
+}
+
+#card1 {
+    margin-right: -5%;
+    margin-left: -5%;
+}
+
+#card2 {
+    margin-right: -5%;
+    margin-left: -5%;
+    margin-top: 3%;
+    margin-bottom: 5%;
+}
+
+
+
+

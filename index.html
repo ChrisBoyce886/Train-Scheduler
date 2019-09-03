@@ -2,11 +2,98 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Train Scheduler</title>
+
+    <title>Train Scheduler</title>    
+    
+    <link rel="shortcut icon" type="image/ico" href="assets/images/train.jpg"> <!--Favicon-->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script> <!--For Bootstrap-->
+    
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> <!--Bootstrap 4-->
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script> <!--Moment.js-->
+       
+    <link href="https://fonts.googleapis.com/css?family=Monoton&display=swa&effect=neon" rel="stylesheet"> <!--Google Fonts Link-->
+
+    <link rel="stylesheet" href="assets/css/style.css"> <!--CSS Stylesheet-->
 </head>
 <body>
-    
+
+    <div class="container">
+        <!-- //JumboTron -->
+        <div class="jumbotron form-inline justify-content-center">
+            <h1 class="text-center font-effect-neon" id="header">TRAIN &nbsp &nbsp &nbspSCHEDULER</h1>
+        </div>
+        <!-- //Create Table to show current train times -->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="card" id="card1">
+                    <div class="card-header">
+                        <h3><b>Current Train Schedule</b></h3>
+                    </div>
+                    <div class="card-body">
+                        <table class="table table-striped">
+                            <thead class="thead-dark">
+                                <tr>
+                                    <th>Train Name</th>
+                                    <th>Destination</th>                                    
+                                    <th>Next Arrival</th>
+                                    <th>Minutes Away</th>
+                                    <th>Frequency</th>
+                                </tr>                                
+                            </thead>
+                            <tbody>
+                                <!-- //Use Javascript to insert contents here -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- //Create form table for user to enter new train data -->
+        <div class="row">
+            <div class="col-lg">
+                <div class="card" id="card2">
+                    <div class="card-header">
+                       <h3><b>Add New Train</b></h3>
+                    </div>
+                    <div class="card-body">
+                        <form>
+                            <div class="form-group">
+                                <label for="">Train Name</label>
+                                <input type="text" class="form-control" id="train-name">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Destination</label>
+                                <input type="text" class="form-control" id="destination">
+                            </div>
+                            <div class="form-group">
+                                <label for="">First Train Time (HH:mm)</label>
+                                <input type="text" class="form-control" id="first-train">
+                            </div>
+                            <div class="form-group">
+                                <label for="">Frequency (in minutes)</label>
+                                <input type="text" class="form-control" id="frequency">
+                            </div>
+                            <!-- //Add submit button -->
+                            <button type="submit" class="btn btn-dark" id="submitBtn">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> <!--jQuery library-->
+
+<script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script> <!--Firebase-->
+
+<script src="assets/javascript/javascript.js" type="text/javascript"></script> <!--Link to Javascript code-->
+
 </body>
 </html>
