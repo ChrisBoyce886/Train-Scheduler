@@ -20,7 +20,7 @@ Click [here](  ) to play the game.
 ## Built With
 * [Firebase](https://firebase.google.com/)
 * Javascript
-* [jQuery Library](https://jquery.com/)
+* [jQuery](https://jquery.com/)
 * [Moment.js](https://momentjs.com/)
 * [Bootstrap 4](https://getbootstrap.com/)
 * HTML5
