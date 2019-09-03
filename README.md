@@ -9,7 +9,7 @@ information about various trains, namely their arrival times and how many minute
 The application is to be built with HTML that is dynamically updated using Javascript and the jQuery library. The webpage also needs to 
 pull data from a Firebase database and incorporate Moment.js to manipulate and display data in correct time formats.
 
-Click [here](  ) to play the game. 
+Click [here]( https://chrisboyce886.github.io/Train-Scheduler/ ) to play the game. 
 
 ## How to Play
 *  
